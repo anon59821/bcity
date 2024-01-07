@@ -1,0 +1,30 @@
+<!Doctype html public "-//ietf//dtd html 2.0//en">
+<html><head>
+<title>ATTENTION!</title>
+<link rel="icon" type="image/x-icon" href="favicon.Ico">
+</head><body onload='CheckBoxFu()'>
+<p style="font-size: 30px;"><b><input type="checkbox" id="agreement" name="agreement" value="none"> We are not liable for any injury.</b></p>
+
+<script>
+
+function CheckBoxFu() {
+
+  var checkBox = document.getElementById("agreement");
+      
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    window.open('orderfinalize.html', '_blank', 'resizable,height=50,width=300');
+  } 
+ else {setTimeout(CheckBoxFu, 1);}
+}
+
+</script>
+
+</body></html>
+
+
+
+
+
+
+

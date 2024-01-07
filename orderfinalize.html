@@ -1,0 +1,34 @@
+<!Doctype html public "-//ietf//dtd html 2.0//en">
+<html><head>
+<title>Almost there...</title>
+<link rel="icon" type="image/x-icon" href="favicon.Ico">
+</head>
+<body>
+<p style="font-size: 25px;"><b>
+
+
+<input type="text" id="addressinp" placeholder="Enter the address . . ." name="fname">  <button onclick="SubmitBut()">Send</button></p>
+
+
+<script>
+
+
+function SubmitBut() {
+
+console.log("Saving address . . .");
+var userInput = document.getElementById('addressinp').value;
+window.open('success.html', '_blank','resizable,height=460,width=421');
+console.log("Address saved to database as '#adr" + Math.random()*100 + "'.");
+console.log("Address was marked as 'in transit'.");
+}
+
+</script>
+
+</body></html>
+
+
+
+
+
+
+

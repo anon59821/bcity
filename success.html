@@ -1,0 +1,78 @@
+<!Doctype html public "-//ietf//dtd html 2.0//en">
+<html><head>
+<title>Success!</title>
+</head>
+
+
+<style>
+
+div
+{
+display: none;
+}
+
+body {
+  background-color: #18997E;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+</style>
+
+<body onload='func()'>
+
+<CENTER>
+<img src="loading.png" alt="Loading..." id="loadingpng" class="center">
+</CENTER>
+
+
+<div id="texdloadf">
+<CENTER>
+<p style="font-size: 25px;"><b>READY!</b>
+<br><br> The bomb is heading in your city.
+<br>Take cover!
+<br><br><br><br>
+You can now close the windows.<br>
+Estimated delivery: 1-2 days
+<br><br><br>
+<img src="drone.png" alt="Drone image">
+
+</p>
+</CENTER>
+</div>
+
+
+<script>
+
+function sendorder(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end < start + ms) {
+     end = new Date().getTime();
+  }
+}
+
+const func = async () => {
+  sendorder(3400);
+var x = document.getElementById("texdloadf");
+var image_x = document.getElementById('loadingpng');
+image_x.parentNode.removeChild(image_x);
+x.style.display = "block";
+};
+
+
+</script>
+
+</body></html>
+
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> BOMB YOUR CITY! </title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<style>
+
+
+a:link {
+  color: #ffffff !important;
+}
+a:visited {
+  color: #ffffff !important;
+}
+a:hover {
+  color: #ffffff !important;
+}
+a:active {
+  color: #ffffff !important;
+}
+
+body {
+  background-color: #18997E;
+  background-image: url("bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center up;
+	
+}
+
+@font-face {
+ font-family: "Bardon Rounded Demo";
+ src:url(font.otf);
+}
+
+p {
+  font-family: Bardon Rounded Demo;
+  color:white;
+  height: auto;
+  word-wrap: break-word;
+  font-size: 40px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+img {
+    mix-width: 80%;
+    max-width: 90%;
+    height: auto;
+    position: center;
+    display: block;
+}
+
+div {
+    width:100%;
+    position: absolute;
+    bottom:0;
+}
+
+
+</style>
+
+</head>
+<br>
+<body onload='testmobile()'>
+<center>
+
+<script>
+function testmobile() {
+
+if (( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 ) )
+
+{
+document.querySelector('body').style.display = 'none';
+window.open('nomobile.html', "_self");
+}
+
+};
+</script>
+
+<img src="texta.png" alt="BOMB YOUR CITY">
+<center>
+
+
+
+<BR><BR>
+
+<div>
+
+<p>
+
+<a href="#" onClick="window.open('order.html','order','height=100,width=500'); return false;">ORDER</a>
+
+or 
+
+<a href="#" onClick="window.open('readmore.html', 'readmore', 'resizable,height=660,width=800'); return false;">READMORE</a>
+
+<noscript>You need Javascript to use this website and you will get best experience with JavaScript. But if you absolutely refuse to activate it for sake of confidentiality (which we respect indeed!), you can try to use the old version of our website: <a href="old.html" target="_blank">click here...</a> </noscript> 
+
+</p>
+
+<img src="textb.png" alt="FREE - SINCE 2002"><br></div>
+
+
+</center>
+</body>
+</html>
